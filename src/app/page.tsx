@@ -1,5 +1,14 @@
+import { Header } from '@/component/Header'
+import { Slider } from '@/component/Slider '
+
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>ぽんぽこ24</main>
+    <div className='bg-[url("/background.webp")]'>
+      <Header />
+      <div className='md:container mx-auto px-2 '>
+        {/* カルーセル */}
+        <Slider />
+      </div>
+    </div>
   )
 }
