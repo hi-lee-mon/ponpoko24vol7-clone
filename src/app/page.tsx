@@ -7,6 +7,8 @@ import { Scrollbar } from '@/component/Scrollbar'
 import { KeyVisual } from '@/component/KeyVisual'
 import { Quiz } from '@/component/Quiz'
 import { Schedule } from '@/component/Schedule'
+import Image from 'next/image'
+import { Extra } from '@/component/Extra'
 
 export default function Home() {
   return (
@@ -32,6 +34,10 @@ export default function Home() {
           subText='クリック・タップするとゲストを確認できます'
         />
         <Schedule />
+      </Container>
+      <Container>
+        <SectionTitle h1Text='EXTRA' h2Text='関連コンテンツや関連動画など' />
+        <Extra />
       </Container>
     </div>
   )
