@@ -5,5 +5,5 @@ type Props = {
 }
 
 export const Container = ({ children }: Props) => {
-  return <section className='md:container mx-auto px-2 py-20'>{children}</section>
+  return <section className='md,lg:container mx-auto px-2 py-20'>{children}</section>
 }
