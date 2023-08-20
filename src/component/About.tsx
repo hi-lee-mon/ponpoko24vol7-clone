@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       {/* about 1 */}
-      <div className='grid grid-cols-12 items-center'>
+      <div className='flex flex-col-reverse mb-20 lg:flex-col lg:grid lg:grid-cols-12 items-center'>
         <div className='col-start-2 col-end-8'>
           <h2 className='text-[22.5px] font-bold'>YouTubeで開催される24時間生放送</h2>
           <p className='leading-8'>
@@ -16,7 +16,7 @@ const About = () => {
             ゲストはVTuberのみならず、Youtuber、漫画家、お笑い芸人、ミュージシャンなど、様々な分野からやってくる。
           </p>
         </div>
-        <div className='col-start-8 col-end-12'>
+        <div className='col-start-8 col-end-12 p-2'>
           <Image
             className='rounded-full'
             src='/about-peanuts-anime.png'
@@ -27,7 +27,7 @@ const About = () => {
         </div>
       </div>
       {/* about 2 */}
-      <div className='grid grid-cols-12 items-center'>
+      <div className='flex flex-col mb-20 lg:grid lg:grid-cols-12 items-center'>
         <div className='col-start-2 col-end-5'>
           <Image
             className='rounded-full'
@@ -49,7 +49,7 @@ const About = () => {
         </div>
       </div>
       {/* about 3 */}
-      <div className='grid grid-cols-12 items-center'>
+      <div className='flex flex-col-reverse mb-20 lg:flex-col lg:grid lg:grid-cols-12 items-center'>
         <div className='col-start-2 col-end-8'>
           <h2 className='text-[22.5px] font-bold'>独自のCM文化</h2>
           <p className='leading-8'>
@@ -71,7 +71,7 @@ const About = () => {
         </div>
       </div>
       {/* about 4 */}
-      <div className='grid grid-cols-12 items-center'>
+      <div className='flex flex-col mb-20 lg:grid lg:grid-cols-12 items-center'>
         <div className='col-start-2 col-end-5'>
           <Image
             className='rounded-full'

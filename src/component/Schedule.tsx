@@ -26,7 +26,7 @@ const images = [
 
 export const Schedule = () => {
   return (
-    <div className='flex justify-center'>
+    <div className='lg:flex justify-center'>
       <div className='grid lg:grid-cols-3 gap-10 lg:px-4 max-w-7xl'>
         {images.map((path) => (
           <button
