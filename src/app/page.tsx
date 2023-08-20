@@ -12,8 +12,20 @@ import { Extra } from '@/component/Extra'
 
 export default function Home() {
   return (
-    <div className='bg-[url("/background.webp")]'>
+    <div className='p-4 bg-[url("/background.webp")]'>
       <Header />
+      <Image
+        className='lg:hidden'
+        src='/logo.0e393f92.webp'
+        alt='ロゴ'
+        width={210}
+        height={120}
+        sizes='100vw'
+        style={{
+          width: '100%',
+          height: 'auto',
+        }}
+      />
       <Container>
         <Slider />
       </Container>
@@ -21,12 +33,10 @@ export default function Home() {
         <SectionTitle h1Text='ABOUT' h2Text='ぽんぽこ24って何？' />
         <About />
       </Container>
-      <Container>
-        <SectionTitle h1Text='ARCHIVE' h2Text='ぽんぽこ24の歴史' />
-        <Scrollbar />
-        <Quiz />
-        <KeyVisual />
-      </Container>
+      <SectionTitle h1Text='ARCHIVE' h2Text='ぽんぽこ24の歴史' />
+      <Scrollbar />
+      <Quiz />
+      <KeyVisual />
       <Container>
         <SectionTitle
           h1Text='SCHEDULE'
