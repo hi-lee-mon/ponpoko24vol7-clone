@@ -4,9 +4,8 @@ import { Container } from '@/component/Container'
 import { SectionTitle } from '@/component/SectionTitle'
 import About from '@/component/About'
 import { Scrollbar } from '@/component/Scrollbar'
-import Image from 'next/image'
 import { KeyVisual } from '@/component/KeyVisual'
-import { Quiz } from '@/component/Quize'
+import { Quiz } from '@/component/Quiz'
 
 export default function Home() {
   return (
