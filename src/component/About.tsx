@@ -16,7 +16,7 @@ const About = () => {
             ゲストはVTuberのみならず、Youtuber、漫画家、お笑い芸人、ミュージシャンなど、様々な分野からやってくる。
           </p>
         </div>
-        <div className='col-start-9 col-end-12'>
+        <div className='col-start-8 col-end-12'>
           <Image
             className='rounded-full'
             src='/about-peanuts-anime.png'
@@ -60,7 +60,7 @@ const About = () => {
             生放送終了後は、流れたCMをリストにして公開予定。お気に入りのCMを見返すことも可能。
           </p>
         </div>
-        <div className='col-start-9 col-end-12'>
+        <div className='col-start-8 col-end-12'>
           <Image
             className='rounded-full'
             src='/about-peanuts-puppet.png'
