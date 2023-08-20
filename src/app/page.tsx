@@ -6,13 +6,13 @@ import About from '@/component/About'
 import { Scrollbar } from '@/component/Scrollbar'
 import { KeyVisual } from '@/component/KeyVisual'
 import { Quiz } from '@/component/Quiz'
+import { Schedule } from '@/component/Schedule'
 
 export default function Home() {
   return (
     <div className='bg-[url("/background.webp")]'>
       <Header />
       <Container>
-        {/* カルーセル */}
         <Slider />
       </Container>
       <Container>
@@ -24,6 +24,14 @@ export default function Home() {
         <Scrollbar />
         <Quiz />
         <KeyVisual />
+      </Container>
+      <Container>
+        <SectionTitle
+          h1Text='SCHEDULE'
+          h2Text='企画一覧'
+          subText='クリック・タップするとゲストを確認できます'
+        />
+        <Schedule />
       </Container>
     </div>
   )
