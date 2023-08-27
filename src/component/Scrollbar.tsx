@@ -50,7 +50,7 @@ export const Scrollbar = () => {
       {images.map((image) => (
         <SwiperSlide key={image.path}>
           <Link href='#'>
-            <div className='grid-cols-1 grid-rows-2  rounded-lg p-5  bg-green-800 bg-opacity-10 cursor-pointer'>
+            <div className='rounded-lg p-5 bg-green-800 bg-opacity-10'>
               <Image
                 className='rounded-lg mb-2'
                 src={image.path}

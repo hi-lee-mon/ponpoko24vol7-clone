@@ -1,5 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
+import peanutsAnime from '../../public/about-peanuts-anime.png'
+import ponpokoAnime from '../../public/about-ponpoko-anime.png'
+import peanutsPuppet from '../../public/about-peanuts-puppet.png'
+import ponpokoPuppet from '../../public/about-ponpoko-puppet.png'
 
 const About = () => {
   return (
@@ -17,25 +21,14 @@ const About = () => {
           </p>
         </div>
         <div className='col-start-8 col-end-12 p-2'>
-          <Image
-            className='rounded-full'
-            src='/about-peanuts-anime.png'
-            alt=''
-            width={400}
-            height={400}
-          />
+          {/* static importですね。パフォーマンス上の利点はあります。具体的にはキャッシュが永続化されるのと、自動blur効果（まずは解像度が低い状態で読み込み、次第に鮮明な画像に切り替わる。UXをよくする手法）がつきます。 */}
+          <Image className='rounded-full' src={peanutsAnime} alt='' placeholder='blur' />
         </div>
       </div>
       {/* about 2 */}
       <div className='flex flex-col mb-20 lg:grid lg:grid-cols-12 items-center'>
         <div className='col-start-2 col-end-5'>
-          <Image
-            className='rounded-full'
-            src='/about-ponpoko-anime.png'
-            alt=''
-            width={400}
-            height={400}
-          />
+          <Image className='rounded-full' src={ponpokoAnime} alt='' placeholder='blur' />
         </div>
         <div className='col-start-6 col-end-12'>
           <h2 className='text-[22.5px] font-bold'>今年で7回目を迎えるぽんぽこ24</h2>
@@ -63,8 +56,9 @@ const About = () => {
         <div className='col-start-8 col-end-12'>
           <Image
             className='rounded-full'
-            src='/about-peanuts-puppet.png'
+            src={peanutsPuppet}
             alt=''
+            placeholder='blur'
             width={400}
             height={400}
           />
@@ -75,8 +69,9 @@ const About = () => {
         <div className='col-start-2 col-end-5'>
           <Image
             className='rounded-full'
-            src='/about-ponpoko-puppet.png'
+            src={ponpokoPuppet}
             alt=''
+            placeholder='blur'
             width={400}
             height={400}
           />
